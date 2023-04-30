@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Archivo", "Noto Sans KR", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+li, ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#wrap .intro {
+  width: 100%;
+  height: 100vh;
+  background-color: rebeccapurple;
+}
+#wrap .portfolio-wrap .portfolio-wrap-box {
+  width: 100%;
+  height: 100vh;
+}
+#wrap .portfolio-wrap .portfolio-wrap-box .portfolio {
+  width: 1400px;
+  height: 670px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#wrap .portfolio-wrap .portfolio-wrap-box .portfolio .portfolio-text-wrap {
+  width: 380px;
+  height: 670px;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: rebeccapurple;
+}
+#wrap .portfolio-wrap .portfolio-wrap-box .portfolio .portfolio-img-wrap {
+  width: 570px;
+  height: 670px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 4px 4px 4px #d9d9d9;
+  border-radius: 10% 30% 0% 30%;
+  background-color: wheat;
+  position: relative;
+}
+#wrap .portfolio-wrap .portfolio-wrap-box .portfolio .portfolio-img-wrap a img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 7s ease-in-out;
+}
+#wrap .about-me-wrap {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff0d5;
+}
+#wrap .about-me-wrap .about-me {
+  width: 1400px;
+  height: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+#wrap .about-me-wrap .about-me .about-me-intro {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+#wrap .about-me-wrap .about-me .about-me-intro .about-me-portrait {
+  width: 200px;
+  height: 200px;
+}
+#wrap .about-me-wrap .about-me .about-me-intro .about-me-portrait img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+#wrap .about-me-wrap .about-me .about-me-intro .about-me-title {
+  margin-left: 30px;
+  line-height: 1.5rem;
+}
+#wrap .about-me-wrap .about-me .about-me-intro .about-me-title strong {
+  display: block;
+  font-size: 25px;
+}
+#wrap .about-me-wrap .about-me .about-me-text {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info {
+  height: 100%;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info .about-me-info-title {
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info .about-me-info-title h4 {
+  font-size: 25px;
+  letter-spacing: 0.1rem;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info1 {
+  width: 300px;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info1 .about-me-info-section-wrap {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info1 .about-me-info-section-wrap .about-me-info-section {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info1 .about-me-info-section-wrap .about-me-info-section .info-icon {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info1 .about-me-info-section-wrap .about-me-info-section .info-icon i {
+  font-size: 2rem;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info1 .about-me-info-section-wrap .about-me-info-section .info-icon img {
+  width: 40px;
+  height: 40px;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info1 .info-text {
+  font-size: 1.2rem;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info2 {
+  width: 500px;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info2 .about-me-skill-section-wrap {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info2 .about-me-skill-section-wrap .about-me-skill-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 60px;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info2 .about-me-skill-section-wrap .about-me-skill-section .skill-name span {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info2 .about-me-skill-section-wrap .about-me-skill-section .skill-max-bar {
+  width: 250px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 15px;
+  position: relative;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info2 .about-me-skill-section-wrap .about-me-skill-section .skill-max-bar .skill-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  background-color: red;
+  height: 100%;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info2 .about-me-skill-section-wrap .about-me-skill-section .skill-max-bar .skill-rate {
+  position: absolute;
+  right: -65px;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info3 {
+  width: 400px;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info3 .Character-wrap {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info3 .Character-wrap img {
+  width: 250px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info3 .Character-wrap span {
+  position: absolute;
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info3 .Character-wrap span:nth-of-type(1) {
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info3 .Character-wrap span:nth-of-type(2) {
+  top: 34.5%;
+  left: 6%;
+  transform: translate(-50%, -50%);
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info3 .Character-wrap span:nth-of-type(3) {
+  top: 35.5%;
+  right: -9%;
+  transform: translate(-50%, -50%);
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info3 .Character-wrap span:nth-of-type(4) {
+  top: 72%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+#wrap .about-me-wrap .about-me .about-me-text .about-me-info3 .Character-wrap span:nth-of-type(5) {
+  top: 72%;
+  right: 12%;
+  transform: translate(-50%, -50%);
+}
