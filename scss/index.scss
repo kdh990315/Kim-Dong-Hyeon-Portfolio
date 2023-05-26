@@ -186,7 +186,7 @@
 					.qweqwe {
 						width: 280px;
 						height: 280px;
-						background-image: url('/img/portrait1.png');
+						background-image: url(/img/portrait1.png);
 						background-repeat: no-repeat;
 						background-position: center center;
 						background-size: 100%;
@@ -197,7 +197,7 @@
 						
 	
 						&:hover {
-							background-image: url('/img/portrait2.png');
+							background-image: url(/img/portrait2.png);
 						}
 					}
 
