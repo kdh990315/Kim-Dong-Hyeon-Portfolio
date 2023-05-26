@@ -165,7 +165,7 @@ a {
 #wrap .about-me-wrap .about-me .about-me-intro .about-me-portrait .qweqwe {
   width: 280px;
   height: 280px;
-  background-image: url(/img/portrait1.png);
+  background-image: url(img/portrait1.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
@@ -175,7 +175,7 @@ a {
   transform: translate(-50%, -50%);
 }
 #wrap .about-me-wrap .about-me .about-me-intro .about-me-portrait .qweqwe:hover {
-  background-image: url(/img/portrait2.png);
+  background-image: url(img/portrait2.png);
 }
 #wrap .about-me-wrap .about-me .about-me-intro .about-me-portrait img {
   width: 130px;
