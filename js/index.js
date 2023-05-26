@@ -37,10 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	//테스트
 
-	let portfolioName = document.querySelectorAll('.portfolio-text-num h2'),
-		asd = '';
-
-		portfolioName[0].charAt()
 
 
 		
