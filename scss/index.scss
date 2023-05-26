@@ -4,10 +4,37 @@
 
 #wrap {
 	
-	.intro {
+	.intro-wrap {
 		width: 100%;
 		height: 100vh;
-		background-color: rebeccapurple;
+
+		.intro {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			svg {
+				fill: none;
+				width: 1000px;
+				stroke-width: 2.5rem;
+
+				path {
+					stroke: #000;
+					stroke-dasharray: var(--length);
+					stroke-dashoffset: var(--length);
+					animation: path var(--duration) forwards;
+					animation-delay: var(--delay);
+				}
+
+				@keyframes path {
+					100% {
+						stroke-dashoffset: 0;
+					}
+				}
+			}
+		}
 	}
 	
 
@@ -36,7 +63,70 @@
 					text-align: right;
 					align-items: flex-end;
 					justify-content: center;
-					background-color: rebeccapurple;
+
+					.portfolio-text-num {
+						width: 100%;
+						margin-bottom: 30px;
+
+						h2 {
+							font-size: 2.2rem;
+
+							b {
+								font-size: 3.5rem;
+								padding-left: 13px;
+							}
+						}
+					}
+
+					.portfolio-text-title {
+						width: 100%;
+						margin-bottom: 1rem;
+
+						h3 {
+							font-size: 1.15rem;
+							text-transform: uppercase;
+						}
+
+						p {
+							font-size: 0.9rem;
+						}
+					}
+
+					.portfolio-text-content-wrap {
+						width: 100%;
+
+						p {
+							letter-spacing: 0.01rem;
+							font-size: 0.9rem;
+							line-height: 1.3rem;
+							margin-bottom: 20px;
+						}
+					}
+
+					sub {
+						width: 100%;
+						font-size: 0.65rem;
+						line-height: 0.8rem;
+						margin-top: 10px;
+					}
+
+					.portfolio-btn-wrap {
+						width: 100%;
+						margin-top: 5px;
+						display: flex;
+						justify-content: space-between;
+
+						.portfolio-btn {
+							font-size: 1rem;
+							border: 1px solid #ababab;
+							letter-spacing: 0.15rem;
+							padding: 10px 15px;
+						}
+					}
+
+					&:nth-child(2n) {
+						text-align: left;
+					}
 				}
 	
 				.portfolio-img-wrap {
@@ -69,7 +159,6 @@
 	.about-me-wrap {
 		width: 100%;
 		height: 100vh;
-		background-color: #fff0d5;
 
 		.about-me {
 			width: 1400px;
@@ -90,11 +179,33 @@
 				.about-me-portrait {
 					width: 200px;
 					height: 200px;
+					background-color: #fff;
+					position: relative;
+
+
+					.qweqwe {
+						width: 280px;
+						height: 280px;
+						background-image: url(/img/portrait1.png);
+						background-repeat: no-repeat;
+						background-position: center center;
+						background-size: 100%;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						
+	
+						&:hover {
+							background-image: url(/img/portrait2.png);
+						}
+					}
 
 					img {
-						width: 100%;
-						height: 100%;
-						border-radius: 50%;
+						width: 130px;
+						position: absolute;
+						left: 170px;
+						top: -60px;
 					}
 				}
 
@@ -124,8 +235,7 @@
 						
 
 						h4 {
-							font-size: 25px;
-							letter-spacing: 0.1rem;
+							font-size: 1.25rem;
 						}
 					}
 				}
@@ -145,12 +255,14 @@
 							margin: 10px 0;
 	
 							.info-icon {
-								width: 60px;
+								width: 40px;
 								height: 60px;
 								text-align: center;
 								display: flex;
 								align-items: center;
 								justify-content: center;
+								margin-right: 15px;
+								
 		
 								i {
 									font-size: 2rem;
@@ -192,7 +304,7 @@
 	
 								span {
 									text-transform: uppercase;
-									font-size: 1.2rem;
+									font-size: 1rem;
 								}
 							}
 	
@@ -240,6 +352,7 @@
 
 						span {
 							position: absolute;
+							font-size: 0.8rem;
 
 							&:nth-of-type(1) {
 								top: 7%;
